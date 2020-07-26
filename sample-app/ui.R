@@ -20,7 +20,7 @@ shinyUI(fluidPage(theme=shinytheme("united"),
             
             selectInput("compounds","Select Compounds:",
                         choices=compoundlist,
-                        selected=as.character(c("X-101","X-103")),
+                        selected=as.character(c("X-101","X-102","X-103")),
                         multiple=T),
             
             selectInput("control","Select Control Compound:",choices = NULL),

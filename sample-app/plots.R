@@ -101,8 +101,8 @@ bar_plot <- function(df,control_sel) {
   col_palette <- c("#ff0000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
   col_palette <- col_palette[1:length(unique(avg_df$compound))]
   avg_df <- arrange(avg_df,desc(compound))
-  p <- plot_ly(data=avg_df,x=~compound,y=~mean_EC50,color=~compound,colors=col_palette,type='bar',
-               error_y=~list(array=sd_EC50,color="#000000")) %>%
+  p <- plot_ly(data=avg_df,x=~compound,y=~mean_EC50,color=~compound,colors=col_palette,type='bar') %>%
+               # error_y=~list(array=sd_EC50,color="#000000")) %>%
     layout(showlegend=FALSE,
            title="Half Maximal Effective Concentration(EC50)",
            xaxis=list(title=""),
@@ -118,8 +118,8 @@ perc_plot <- function(df,control_sel) {
   col_palette <- c("#ff0000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
   col_palette <- col_palette[1:length(unique(avg_df$compound))]
   avg_df <- arrange(avg_df,desc(compound))
-  p <- plot_ly(data=avg_df,x=~compound,y=~mean_per,color=~compound,colors=col_palette,type='bar',
-               error_y=~list(type="data",array=sd_per)) %>%
+  p <- plot_ly(data=avg_df,x=~compound,y=~mean_per,color=~compound,colors=col_palette,type='bar') %>%
+               # error_y=~list(type="data",array=sd_per)) %>%
     layout(showlegend=FALSE,
            title="% Change from Control",
            xaxis=list(title=""),

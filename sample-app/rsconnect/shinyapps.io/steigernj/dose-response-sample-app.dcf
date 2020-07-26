@@ -1,0 +1,13 @@
+name: dose-response-sample-app
+title: dose-response-sample-app
+username:
+account: steigernj
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2614726
+bundleId: 3438632
+url: https://steigernj.shinyapps.io/dose-response-sample-app/
+when: 1595800853.43723
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: data_tab_functions.R
