@@ -89,7 +89,7 @@ model_plot <- function(df,model_df,showdata,control_sel,normalize_input,model_ve
   p <- p + scale_color_manual(values=palette)
   p <- p + scale_fill_manual(values=palette)
   p <- p + xlab("Concentration") + ylab("Response +/- SD")
-  p <- p + labs(title=paste("Average Models: ",model_version,sep=""), subtitle=paste("Model Used: ",model_version), color="Compound", fill="Compound")
+  p <- p + labs(title=paste("Average Modeled Curves: ",model_version,sep=""), subtitle=paste("Model Used: ",model_version), color="Compound", fill="Compound")
   return(p)
 }
 

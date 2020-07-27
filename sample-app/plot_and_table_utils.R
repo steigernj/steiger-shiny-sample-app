@@ -73,4 +73,4 @@ build_model_table <- function(df) {
   ) 
 }
 
-# Dose-response based experiments are used throughout the drug discovery process in order to compare novel molecules' efficacy, potency, and mitogenicity performances during cell-based assays. Analysis of this data plays a vital role in research planning and progress. This tool is meant to be an example of dose-response data modelling and analysis using data similar to that resulting from cell-based assays.
+# Dose-response based experiments are used throughout the drug discovery process in order to compare novel molecules' efficacy, potency, and mitogenicity performances during cell-based assays. Analysis of this data plays a vital role in research planning and progress. This tool is meant to be an example of dose-response data modeling and analysis using data similar to that resulting from cell-based assays.

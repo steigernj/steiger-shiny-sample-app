@@ -6,7 +6,7 @@ source("plot_and_table_utils.R")
 shinyServer(function(input, output, session) {
     shinyalert(
         title = "Hello",
-        text = "Dose-response based experiments are used throughout the drug discovery process in order to compare novel molecules' efficacy, potency, and mitogenicity performances during cell-based assays. Analysis of this data plays a vital role in research planning and progress. This tool is meant to be an example of dose-response data modelling and analysis using data similar to that resulting from cell-based assays.",
+        text = "Dose-response based experiments are used throughout the drug discovery process in order to compare novel molecules' efficacy, potency, and mitogenicity performances during cell-based assays. Analysis of this data plays a vital role in research planning and progress. This tool is meant to be an example of dose-response data modeling and analysis using data similar to that resulting from cell-based assays.",
         closeOnEsc = TRUE,
         closeOnClickOutside = TRUE,
         html = FALSE,
